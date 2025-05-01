@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Deepak & Nivashini - Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Rochester&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #fff;
+            color: #fff;
+        }
+
+        .hero {
+            background-image: url('https://bd-cdn-0-serve.bigdate.events/hifopyjzn____Weds_28_May_-beowu~~~~wd.bigdate.events/Thanks_Page_ABN_Wedding_3____99_300/assets/thanks_image__1737703870307.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero h1, .hero .details, .countdown {
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-family: 'Rochester', cursive;
+            letter-spacing: 1px;
+        }
+
+        .hero .details {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .countdown {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #FFD700;
+        }
+
+        .invitation {
+            background-color: #000;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .invitation h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .invitation p {
+            font-size: 1.5rem;
+            font-family: 'Rochester', cursive;
+        }
+
+        .decorative-line {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .white-line {
+            display: inline-block;
+            height: 2px;
+            background-color: white;
+            width: 30px;
+        }
+
+        .svelte-1alyoi0 {
+            color: rgb(255, 254, 254);
+            display: inline-block;
+            animation: rotateIcon 3s infinite linear;
+        }
+
+        @keyframes rotateIcon {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+
+        .pink-heart {
+            color: #ff69b4;
+            font-size: 1.5rem;
+        }
+
+        .map-link {
+            margin-top: 20px;
+        }
+
+        .map-link a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .share-section {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        .share-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .share-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .share-icons i {
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .share-icons i:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Deepak & Nivashini</h1>
+    <div class="details">
+        <p>Are getting married!!</p>
+        <i class="fa fa-calendar"></i>
+        <p>28th May 2025, Wednesday 11:00 AM</p>
+        <p>AT</p>
+        <p>Sacred Heart Church, Kalpetta, Wayanad</p>
+    </div>
+    <div class="countdown" id="countdown"></div>
+</section>
+
+<!-- Invitation Section -->
+<section class="invitation">
+    <div class="decorative-line">
+        <span class="white-line svelte-1alyoi0"></span>
+        <span class="white-line svelte-1alyoi0"></span>
+        <i class="fa fa-heart pink-heart svelte-1alyoi0" aria-hidden="true"></i>
+        <span class="white-line svelte-1alyoi0"></span>
+        <span class="white-line svelte-1alyoi0"></span>
+    </div>
+    <h2>You're Invited!</h2>
+    <p>We are delighted to invite you to celebrate the union of our hearts and the beginning of our journey together as we exchange vows on our special day.</p>
+    <div class="map-link">
+        <a href="https://maps.app.goo.gl/8qbRdvUcDbjEnYe86" target="_blank">Meet Us here</a>
+    </div>
+</section>
+
+<!-- Share Section with background image -->
+<section class="share-section">
+    <div style="
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: url('https://bd-cdn-0-serve.bigdate.events/hifopyjzn____Weds_28_May_-beowu~~~~wd.bigdate.events/ABN_Gallery__BDZYO____99_857/assets/gallery_data__1737526628484.webp');
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+        opacity: 0.5;
+        z-index: -1;">
+    </div>
+    <h3>Share the Love!</h3>
+    <div class="share-icons">
+        <i class="fa-brands fa-whatsapp" onclick="shareOnWhatsApp()"></i>
+        <i class="fa-brands fa-instagram" onclick="shareOnInstagram()"></i>
+    </div>
+</section>
+
+<!-- Audio -->
+<audio id="weddingMusic" autoplay loop>
+    <source src="mp3/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Scripts -->
+<script>
+    // Countdown
+    const weddingDate = new Date('2025-05-28T12:00:00').getTime();
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        if (distance <= 0) {
+            countdownElement.innerHTML = "🎊 It's time to celebrate!";
+            clearInterval(timerInterval);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    const timerInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Autoplay on interaction fallback
+    const music = document.getElementById("weddingMusic");
+    document.body.addEventListener('click', () => {
+        if (music.paused) {
+            music.play().catch(err => console.log("Autoplay blocked:", err));
+        }
+    }, { once: true });
+
+    // Sharing
+    function shareOnWhatsApp() {
+        const url = window.location.href;
+        const message = `You're invited to the wedding of Deepak & Nivashini! 🎉💍\nCheck out the details here: ${url}`;
+        window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    function shareOnInstagram() {
+        const url = window.location.href;
+        window.open(`https://www.instagram.com/share?url=${encodeURIComponent(url)}`, '_blank');
+    }
+</script>
+
+</body>
+</html>
